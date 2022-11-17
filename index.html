@@ -5,48 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AHORCADO</title>
-    <!-- <script src="ahorcado.js"></script> -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Juego del Ahorcado</title>
 </head>
 
-<body>
-    <div id="palabra">
-        <p>PALABRA: </p>
-        <p id="palabraOculta"></p>
-        <p id="guiones"></p>
-    </div>
-    <div >
-        <img id="ahorcado" src="ahorcado.jpg" alt="">
-    </div>
-    <div id="botones">
-        <button id="a" value="a" onclick="letra(this)">A</button>
-        <button id="b" value="b" onclick="letra(this)">B</button>
-        <button id="c" value="c" onclick="letra(this)">C</button>
-        <button id="d" value="d" onclick="letra(this)">D</button>
-        <button id="e" value="e" onclick="letra(this)">E</button>
-        <button id="f" value="f" onclick="letra(this)">F</button>
-        <button id="g" value="g" onclick="letra(this)">G</button>
-        <button id="g" value="h" onclick="letra(this)">H</button>
-        <button id="i" value="i" onclick="letra(this)">I</button>
-        <button id="j" value="j" onclick="letra(this)">J</button>
-        <button id="k" value="k" onclick="letra(this)">K</button>
-        <button id="l" value="l" onclick="letra(this)">L</button>
-        <button id="m" value="m" onclick="letra(this)">M</button>
-        <button id="n" value="n" onclick="letra(this)">N</button>
-        <button id="ñ" value="ñ" onclick="letra(this)">Ñ</button>
-        <button id="o" value="o" onclick="letra(this)">O</button>
-        <button id="p" value="p" onclick="letra(this)">P</button>
-        <button id="q" value="q" onclick="letra(this)">Q</button>
-        <button id="r" value="r" onclick="letra(this)">R</button>
-        <button id="s" value="s" onclick="letra(this)">S</button>
-        <button id="t" value="t" onclick="letra(this)">T</button>
-        <button id="u" value="u" onclick="letra(this)">U</button>
-        <button id="v" value="v" onclick="letra(this)">V</button>
-        <button id="w" value="w" onclick="letra(this)">W</button>
-        <button id="x" value="x" onclick="letra(this)">X</button>
-        <button id="y" value="y" onclick="letra(this)">Y</button>
-        <button id="x" value="z" onclick="letra(this)">Z</button>
-    </div>
+<body onload="cargarRecursos()">
+    <header>
+        <h1>Juego del Ahorcado</h1>
+    </header>
+    <main>
+        <img src="/imagen/img0.png" alt="Ahorcado Inicial" id="ahorcadoImg">
+        <div>
+            <p id="palabraAdivina">
+            </p>
+            <button id="iniciar" onclick="iniciarJuego(this)">Obtener Palabra</button>
+
+            <div id="letras">
+                <button onclick="letra(this)">A</button>
+                <button onclick="letra(this)">B</button>
+                <button onclick="letra(this)">C</button>
+                <button onclick="letra(this)">D</button>
+                <button onclick="letra(this)">E</button>
+                <button onclick="letra(this)">F</button>
+                <button onclick="letra(this)">G</button>
+                <button onclick="letra(this)">H</button>
+                <button onclick="letra(this)">I</button>
+                <button onclick="letra(this)">J</button>
+                <button onclick="letra(this)">K</button>
+                <button onclick="letra(this)">L</button>
+                <button onclick="letra(this)">M</button>
+                <button onclick="letra(this)">N</button>
+                <button onclick="letra(this)">Ñ</button>
+                <button onclick="letra(this)">O</button>
+                <button onclick="letra(this)">P</button>
+                <button onclick="letra(this)">Q</button>
+                <button onclick="letra(this)">R</button>
+                <button onclick="letra(this)">S</button>
+                <button onclick="letra(this)">T</button>
+                <button onclick="letra(this)">U</button>
+                <button onclick="letra(this)">V</button>
+                <button onclick="letra(this)">W</button>
+                <button onclick="letra(this)">X</button>
+                <button onclick="letra(this)">Y</button>
+                <button onclick="letra(this)">Z</button>
+            </div>
+            <p id="resultado"></p>
+        </div>
+    </main>
 </body>
-<script src="ahorcado.js"></script>
+
 </html>
